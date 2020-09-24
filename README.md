@@ -26,4 +26,6 @@ There is no redirection happening in application, both components are bind insid
 When any filter applies, flow go from button click from filter component to index.js to API call and rebinding of content component without refreshing the whole page.
 
 
-For performance report, please refer attached pdf file by name "Lighthouse Report"
+For performance report, please refer attached pdf file by name "SpaceX Lighthouse Report" and below is the screenshot for same
+
+![Alt text](screenshot/SpaceXLighthouseReport.png?raw=true "Lighthouse Report")
