@@ -8,7 +8,7 @@ export default function Content({ data }) {
                     return (<div key={index} className={`${styles.missionContainerWidth} col-sm-12 col-md-6 col-lg-3`}>
                         <div className={styles.missionContainer}>
                             <div style={{ backgroundColor: "rgb(241,242,242)", textAlign: "center" }}>
-                                <img className="img-fluid" src={launch.links.mission_patch_small} />
+                                <img alt="spacex_mission_patch" className="img-fluid" src={launch.links.mission_patch_small} />
                             </div>
                             <br />
                             <div className={styles.missionName}>{launch.mission_name} #{launch.flight_number}</div>
