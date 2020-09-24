@@ -38,7 +38,7 @@ function Home({ launches }) {
   }
 
   return (
-    <>
+    <html lang="en">
       <Head>
         <title>SpaceX Launches</title>
         <meta name="spacex" content="initial-scale=1.0, width=device-width" />
@@ -57,7 +57,7 @@ function Home({ launches }) {
           <strong>Developed by:</strong> Lavish Aggarwal
       </div>
       </div>
-    </>
+    </html>
   )
 }
 
