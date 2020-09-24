@@ -41,10 +41,10 @@ function Home({ launches }) {
       <div className={styles.container}>
         <h3>SpaceX Launch Programs</h3>
         <div className="row">
-          <div className="col-sm-2">
+          <div className="col-sm-12 col-lg-2">
             <Filter onButtonClick={handleButtonClick} />
           </div>
-          <div className="col-sm-9">
+          <div className="col-sm-12 col-lg-10">
             <Content data={data} />
           </div>
         </div>

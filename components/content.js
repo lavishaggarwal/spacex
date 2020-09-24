@@ -5,7 +5,7 @@ export default function Content({ data }) {
         <div className="row">
             {
                 data.length > 0 ? data.map((launch, index) => {
-                    return (<div key={index} className={`${styles.missionContainerWidth} col-sm-4`}>
+                    return (<div key={index} className={`${styles.missionContainerWidth} col-sm-12 col-md-6 col-lg-3`}>
                         <div className={styles.missionContainer}>
                             <div style={{ backgroundColor: "rgb(241,242,242)" }}>
                                 <img className={styles.missionPatch} src={launch.links.mission_patch_small} />
