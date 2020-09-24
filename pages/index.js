@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useMemo, useState } from 'react';
 import styles from '../styles/Home.module.css'
 import Filter from "../components/filter";
@@ -38,6 +39,10 @@ function Home({ launches }) {
 
   return (
     <>
+      <Head>
+        <title>SpaceX Launches</title>
+        <meta name="spacex" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className={styles.container}>
         <h3>SpaceX Launch Programs</h3>
         <div className="row">
