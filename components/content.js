@@ -16,7 +16,7 @@ export default function Content({ data }) {
                             <h5>Mission Ids:</h5> <ul>{launch.mission_id.map((id, index) => { return <li key={index}>{id}</li> })}</ul>
                             <h5>Launch Year: <span className={styles.textColor}>{launch.launch_year}</span></h5>
                             <h5>Successful Launch: <span className={styles.textColor}>{launch.launch_success ? "true" : "false"}</span></h5>
-                            <h5>Successful Landing: <span className={styles.textColor}>{launch.rocket.first_stage.cores[0].land_success ? "true" : "false"}</span></h5>
+                            <h5>Successful Landing: <span className={styles.textColor}>{launch.land_success}</span></h5>
                         </div>
                     </div>)
                 })
