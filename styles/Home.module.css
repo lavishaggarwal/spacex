@@ -53,6 +53,22 @@
   width: 70px;
 }
 
+.active {
+	background-color:rgb(144, 185, 66);
+	border-radius:5px;
+	border:1px solid #18ab29;
+	margin: 5px;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:14px;
+	padding:5px;
+  width: 70px;
+}
+
+.filter{
+  float: left
+}
+
 .missionName{
   font-weight: bold;
   color: rgb(71,81,149);
