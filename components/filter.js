@@ -17,10 +17,10 @@ export default function Filter({ onButtonClick }) {
 
     return (
         <div className={styles.filterContainer}>
-            <div style={{ padding: 5, textAlign:"left" }}>
-                <p style={{display: "inline", fontSize: 25}}>Filters</p>
+            <div style={{ padding: 5, textAlign: "left" }}>
+                <p style={{ display: "inline", fontSize: 25 }}>Filters</p>
                 {selectedYear != null || successLaunch != null || successLanding != null ?
-                    <p style={{display: "inline", float: "right", fontSize: 25}} onClick={(e) => { resetAllFilters(), onButtonClick(e, "Reset", null) }}>
+                    <p style={{ display: "inline", float: "right", fontSize: 25 }} onClick={(e) => { resetAllFilters(), onButtonClick(e, "Reset", null) }}>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-counterclockwise" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z" />
                             <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z" />
@@ -36,7 +36,7 @@ export default function Filter({ onButtonClick }) {
                     <h5>Launch Year</h5>
                     <div className="border border-secondary"></div>
                 </div>
-                <div className="row">
+                <div className="row" style={{ textAlign: "center", marginRight: 5 }}>
                     {
                         year.map((yr, i) => {
                             return <div key={i} className="col-6 col-lg-6"><button key={Math.random()} onClick={(e) => { useYear(yr), onButtonClick(e, "launch_year", yr) }} className={`${styles.filterButton} ${selectedYear == yr ? styles.active : ''}`}>{yr}</button></div>
@@ -48,7 +48,7 @@ export default function Filter({ onButtonClick }) {
                     <h5>Successful Launch</h5>
                     <div className="border border-secondary"></div>
                 </div>
-                <div className="row">
+                <div className="row" style={{ textAlign: "center", marginRight: 5 }}>
                     <div className="col-6 col-lg-6">
                         <button onClick={(e) => { useLaunch(true), onButtonClick(e, "launch_success", "true") }} className={`${styles.filterButton} ${successLaunch == true ? styles.active : ''}`}>True</button>
                         <div className="clear-fix"></div>
@@ -63,7 +63,7 @@ export default function Filter({ onButtonClick }) {
                     <h5>Successful Landing</h5>
                     <div className="border border-secondary"></div>
                 </div>
-                <div className="row">
+                <div className="row" style={{ textAlign: "center", marginRight: 5 }}>
                     <div className="col-6 col-lg-6">
                         <button onClick={(e) => { useLanding(true), onButtonClick(e, "land_success", "true") }} className={`${styles.filterButton} ${successLanding == true ? styles.active : ''}`}>True</button>
                         <div className="clear-fix"></div>
